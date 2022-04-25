@@ -1,0 +1,263 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/*========== header ==========*/
+
+.logo-search{
+  height: 60px;
+  width: 100%;
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.logo-search h1{
+  color: #f55236;
+}
+.logo-search img{
+  height: 25px;
+  color: #000;
+}
+
+/*========== navegação ==========*/
+
+.choice-travel{
+  height: 40px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.btn{
+  height: 100%;
+  width: 100%;  
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+
+.btn img{  
+  height: 30px;
+}
+
+.btn p{
+  height: 30px;
+  color: #fff;
+  font-size: 20px;
+  margin-left: 7px;
+}
+
+/*========== formulario ==========*/
+
+.section-form{
+  height: 30vh;
+  width: 100%;  
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form{
+  height: 90%;
+  width: 90%;
+  margin-top: 10px;
+
+  display: flex;
+  flex-direction: column;  
+  
+}
+
+.form h1{
+  margin-bottom: 10px;
+}
+
+.form input{
+  margin-top: 10px;
+  height: 40px;
+  border: 0.5px solid rgba(0, 0, 0, 0.226);
+}
+
+
+.form button{
+  height: 35px;
+  width: 70%;
+  margin-top: 10px;
+  background-color: #616161;
+  color: #f1f1f1;
+  border: none;
+}
+
+/*========== section ==========*/
+.content{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+
+.content-info{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+/*========== locais 50% ==========*/
+
+.location h1, p{
+  margin-top: 10px;
+}
+
+.location img{
+  margin-top: 10px;
+  height: 270px;
+  width: 370px;
+}
+
+
+/*========== locais ==========*/
+.title{
+  margin-top: 30px;
+}
+
+.title p{
+  margin-top: 10px;
+}
+
+.cards{
+  max-width: 100%;
+  margin-top: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card{  
+  width: 100%;
+  margin-top: 15px;
+  background-color: #fff;
+}
+
+.card img{
+  height: 180px;
+  width: 100%;
+}
+
+.info{
+  height: 200px;
+  width: 350px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+}
+
+.info button{
+  padding: 15px;
+  border: none;  
+  background-color: transparent;
+}
+
+/*========== ofertas ==========*/
+
+.promo{
+  background-color: #616161;
+  color: #fff;
+
+  height: 30vh;
+  margin-top: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.promo-info{   
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.promo-info h1{
+  font-size: 39px;
+}
+
+.promo-info button{
+  margin-top: 10px;
+  height: 40px;
+  width: 80px;
+  background-color: #f55236;
+  color: #fff;
+  border: none;
+}
+
+/*========== contact ==========*/
+
+.contact{
+  height: 45vh;
+  padding: 10px;
+  
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.contact ul{
+  list-style-type: none;
+}
+
+.contact button{
+  height: 40px;
+  width: 120px;
+  
+  background-color: #000;
+  color: #fff;
+
+  border: none;
+}
+
+/*========== footer ==========*/
+
+.footer{
+  height: 15vh;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footer p{
+  font-size: 15px;
+}
+
+.icons img{
+  height: 30px;
+  width: 30px;
+  
+}
+
