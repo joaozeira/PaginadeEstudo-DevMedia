@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="index.css" />
     <title>Document</title>
+    
   </head>
 
   <body>
@@ -20,39 +21,36 @@
     <section class="section">
       <div class="section-choice">
         <nav class="navebar">
-          <button class="navebar-button">
+          <button id="btn-flight" class="navebar-button">
             <img src="assets/plane.png" />
             <p>Flight</p>
           </button>
           
-          <button class="navebar-button">
+          <button id="btn-hotel" class="navebar-button">
             <img src="assets/bed.png" />
             <p>Hotel</p>
           </button>
 
-          <button class="navebar-button">
+          <button id="btn-rental" class="navebar-button">
             <img src="assets/car.png" />
             <p>Rental</p>
           </button>
         </nav>
 
-        <div class="travel">
-          <h1>Travel the world with us</h1>
-          <div class="travel-info">
-            <div class="input-info">
-              <label>From</label>
-              <br>
-              <input type="text" placeholder=" Departing from">
-            </div>
-            <div class="input-info">
-              <label>To</label>
-              <br>
-              <input type="text" placeholder=" Arriving at">
-            </div>
-          </div>
+        <div id="toggleflight" class="flight active">
+          <h1>Flight</h1>
           <button>Search and find dates</button>
-      </div>   
-
+        </div>
+        
+        <div id="togglehotel" class="hotel">
+          <h1>Hotel</h1>          
+          <button>Search and find dates</button>
+        </div> 
+        
+        <div id="togglerental" class="rental">
+          <h1>Hotel</h1>          
+          <button>Search and find dates</button>
+        </div>
       </div>
 
     </section>
@@ -144,8 +142,8 @@
       </section>
     </main>
 
-
     <script src="main.js"></script>
+
   </body>
 </html>
 

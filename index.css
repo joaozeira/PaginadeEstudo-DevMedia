@@ -101,7 +101,26 @@ body{
 
 /*========== SECTION HOME (CONTEUDO DE PESQUISA) ==========*/
 
-.travel{
+/*FLIGHT*/
+.flight{
+  background-color: blue;
+  height: 90%;
+  width: 90%;
+  padding: 15px 0;  
+
+  display: none;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.flight:active{
+  display: flex;
+}
+
+/*HOTEL*/
+
+.hotel{
+  background-color: green;
   height: 90%;
   width: 90%;
   padding: 15px 0;  
@@ -111,29 +130,29 @@ body{
   flex-direction: column;
 }
 
-.travel-info{
-  width: 100%;
+.active{
+  background-color: rgb(45, 0, 128);
+  height: 90%;
+  width: 90%;
+  padding: 15px 0;  
+
   display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
-.input-info {  
-  width: 100%;
-}
 
-.input-info input{
-  height: 40px;
-  width: 95%;
-}
-.travel button{
-  height: 40px;
-  max-width: 200px;
-  width: 100%;
-  border: none;
-  background-color: #616161;
-  color: #fff;
-  font-size: 17px;
-  white-space: nowrap
+/*RENTAL*/
 
+.rental{
+  background-color: yellow;
+  height: 90%;
+  width: 90%;
+  padding: 15px 0;  
+
+  display: none;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
 /*========== section ==========*/
