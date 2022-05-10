@@ -9,125 +9,148 @@
 
     <link rel="stylesheet" href="index.css" />
     <title>Document</title>
-    
   </head>
 
   <body>
-    <header class="header">
-      <h1><a href="#">Logo</a></h1>
+    <header>
+      <h1>
+        <a href="#">Logo</a>
+      </h1>
+      <!-- FAZER ANIMAÇÃO PARA ABRIR A LUPA -->
       <img src="assets/lupa.png" alt="lupa de pesquisa" />
     </header>
 
-    <section class="section">
-      <div class="section-choice">
-        <nav class="navebar">
-          <button id="btn-flight" class="navebar-button">
-            <img src="assets/plane.png" />
-            <p>Flight</p>
-          </button>
-          
-          <button id="btn-hotel" class="navebar-button">
-            <img src="assets/bed.png" />
-            <p>Hotel</p>
-          </button>
+    <section id="home">
+      <nav class="navebar">
+        <button onclick="openFlight()">
+          <img src="assets/plane.png" />
+          <p>Flight</p>
+        </button>
+        <button onclick="openHotel()">
+          <img src="assets/bed.png" />
+          <p>Hotel</p>
+        </button>
+        <button onclick="openRental()">
+          <img src="assets/car.png" />
+          <p>Rental</p>
+        </button>
+      </nav>
 
-          <button id="btn-rental" class="navebar-button">
-            <img src="assets/car.png" />
-            <p>Rental</p>
-          </button>
-        </nav>
+      <div class="content">
+        <div id="content-flight" class="active">
+          <h1>Travel world with us</h1>
 
-        <div id="toggleflight" class="flight active">
-          <h1>Flight</h1>
+          <div class="form">
+            <div class="div">
+              <label>From</label>
+              <input type="text" placeholder="Departing from" />
+            </div>
+            <div class="div">
+              <label>To</label>
+              <input type="text" placeholder="Arriving at" />
+            </div>
+          </div>
+
           <button>Search and find dates</button>
         </div>
-        
-        <div id="togglehotel" class="hotel">
-          <h1>Hotel</h1>          
+
+        <div id="content-hotel" class="">
+          <h1>Hotel</h1>
           <button>Search and find dates</button>
-        </div> 
-        
-        <div id="togglerental" class="rental">
-          <h1>Hotel</h1>          
+        </div>
+
+        <div id="content-rental" class="">
+          <h1>Rental</h1>
           <button>Search and find dates</button>
         </div>
       </div>
-
     </section>
 
-    <main class="container">
-      <section class="container-info">
-        <h1>Good offers Right Now</h1>
-        <p>Up to <strong>50%</strong> discount.</p>
-        <div class="location">
-          <img src="assets/cinqueterre.jpg" alt="" />
-          <img src="assets/newyork.jpg" alt="" />
-          <img src="assets/sanfran.jpg" alt="" />
-          <img src="assets/pisa.jpg" alt="" />
-          <img src="assets/paris.jpg" alt="" />
-        </div>
-      </section>
-
-      <section class="container-info">
-        <div class="title">
-          <h1>Explore Nature</h1>
-          <p>Travel with us and see nature at its finest.</p>
-        </div>
-
-        <div class="cards">
-          <div class="card">
-            <img src="assets/ocean.jpg" />
-            <div class="info">
-              <h1>West Coast, Norway</h1>
-              <p>Roundtrip from $79</p>
-              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-              <button>Buy tickets</button>
+    <main>
+      <div class="wrapper">
+        <section id="offers">
+          <div>
+            <div class="title">
+              <h1>Good offers Right Now</h1>
+              <p>Up to <strong>50%</strong> discount.</p>
+            </div>
+            <div class="container">
+              <img src="assets/cinqueterre.jpg" alt="" />
+              <img src="assets/newyork.jpg" alt="" />
+              <img src="assets/sanfran.jpg" alt="" />
+              <img src="assets/pisa.jpg" alt="" />
+              <img src="assets/paris.jpg" alt="" />
             </div>
           </div>
+        </section>
 
-          <div class="card">
-            <img src="assets/mountains.jpg" />
-            <div class="info">
-              <h1>Mountains, Austria</h1>
-              <p>One-way from $39</p>
-              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-              <button>Buy tickets</button>
+        <section id="explore">
+          <div>
+            <div class="title">
+              <h1>Explore Nature</h1>
+              <p>Travel with us and see nature at its finest.</p>
+            </div>
+
+            <div class="cards">
+              <div class="card">
+                <img src="assets/ocean.jpg" />
+                <div class="info">
+                  <h1>West Coast, Norway</h1>
+                  <h2>Roundtrip from $79</h2>
+                  <p>
+                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                  </p>
+                  <button>Buy tickets</button>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="assets/mountains.jpg" />
+                <div class="info">
+                  <h1>Mountains, Austria</h1>
+                  <h2>One-way from $39</h2>
+                  <p>
+                    Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                  </p>
+                  <button>Buy tickets</button>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div class="promo">
-          <div class="promo-info">
+        <section id="promo">
+          <div class="container">
             <h1>Get the best offers firt!</h1>
             <p>Join our newsletter</p>
-
-            <div class="form">
-              <label for="">E-mail</label>
-              <input type="text" placeholder=" Your Email address" />
-            </div>
-
+            <label for="">E-mail</label>
+            <input type="text" placeholder=" Your Email address" />
             <button>Subscribe</button>
           </div>
-        </div>
+        </section>
 
-        <div class="contact">
-          <h1>Contact</h1>
-          <h3>Lets us took yout next trip</h3>
-          <ul>
-            <li>Chicago US</li>
-            <li>Phone - 00 181818</li>
-            <li>Email: email@.com</li>
-          </ul>
+        <section id="contact">
+          <div class="title">
+            <h1>Contact</h1>
+            <h2>Lets us took yout next trip</h2>
+          </div>
+          <div class="info">
+            <ul>
+              <li>Chicago US</li>
+              <li>Phone - 00 181818</li>
+              <li>Email: email@.com</li>
+            </ul>
+          </div>
           <div class="form">
             <input type="text" placeholder=" Nome" />
             <input type="email" placeholder=" Email" />
             <input type="text" placeholder=" Message" />
+            <button>SEND MESSAGE</button>
           </div>
-          <button>SEND MESSAGE</button>
-        </div>
+        </section>
 
-        <footer>
-          <div class="footer">
+        <footer id="footer">
+          <div class="container">
             <h1>Find Us On</h1>
             <div class="icons">
               <img src="assets/facebook.png" alt="" />
@@ -135,15 +158,13 @@
               <img src="assets/pinterest.png" alt="" />
               <img src="assets/snapchat.png" alt="" />
             </div>
-  
-            <p>Powered by <strong>joaozeira</strong></p>
+
+            <p>Powered by <strong>João</strong> </p>
           </div>
         </footer>
-      </section>
+      </div>
     </main>
 
     <script src="main.js"></script>
-
   </body>
 </html>
-

@@ -1,33 +1,30 @@
-const btnFlight = document.getElementById('btn-flight');
-const btnHotel = document.getElementById('btn-hotel');
-const btnRental = document.getElementById('btn-rental');
 
-function btnToggleFlight() {
-    const toggleFlight = document.getElementById('toggleflight');
-    toggleFlight.classList.add('active')
-    const toggleHotel = document.getElementById('togglehotel');
-    toggleHotel.classList.remove('active')
-    const toggleRental = document.getElementById('togglerental');
-    toggleRental.classList.remove('active')
-}
-function btnToggleHotel() {
-    const toggleFlight = document.getElementById('toggleflight');
-    toggleFlight.classList.remove('active')
-    const toggleHotel = document.getElementById('togglehotel');
-    toggleHotel.classList.add('active')
-    const toggleRental = document.getElementById('togglerental');
-    toggleRental.classList.remove('active')
-}
-function btnToggleRental() {
-    const toggleFlight = document.getElementById('toggleflight');
-    toggleFlight.classList.remove('active')
-    const toggleHotel = document.getElementById('togglehotel');
-    toggleHotel.classList.remove('active')
-    const toggleRental = document.getElementById('togglerental');
-    toggleRental.classList.add('active')
+function openFlight() {
+    const flight = document.getElementById('content-flight');
+    flight.classList.add('active');
+    const hotel = document.getElementById('content-hotel');
+    hotel.classList.remove('active');
+    const rental = document.getElementById('content-rental');
+    rental.classList.remove('active');
 }
 
-btnFlight.addEventListener('click', btnToggleFlight);
-btnHotel.addEventListener('click', btnToggleHotel);
-btnRental.addEventListener('click', btnToggleRental);
+function openHotel() {
+    const flight = document.getElementById('content-flight');
+    flight.classList.remove('active');
+    const hotel = document.getElementById('content-hotel');
+    hotel.classList.add('active');
+    const rental = document.getElementById('content-rental');
+    rental.classList.remove('active');
+}
+
+function openRental() {
+    const flight = document.getElementById('content-flight');
+    flight.classList.remove('active');
+    const hotel = document.getElementById('content-hotel');
+    hotel.classList.remove('active');
+    const rental = document.getElementById('content-rental');
+    rental.classList.add('active');
+}
+
+
 
