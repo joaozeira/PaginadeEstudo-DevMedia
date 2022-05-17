@@ -25,12 +25,15 @@ main {
   display: flex;
   flex-direction: column;
   width: 80%;
-  gap: 2rem;
+  gap: 5rem;
 }
 
 .title h1{
   font-size: 2rem;
-  margin-top: 1rem;
+}
+
+.title h1:first-child{
+  margin-top: 2rem;
 }
 .title p{
   font-size: 1.5rem;
@@ -125,7 +128,10 @@ header img{
 }
 
 #content-flight.active{
-  height: 100%;
+  height: 100%; 
+  width: 95rem; 
+  max-width: 100%;
+
   padding: 2rem;
 
   display: flex;
@@ -137,47 +143,179 @@ header img{
   font-size: 3rem;
 }
 
-#content-flight.active .form{  
-  display: flex;
-  justify-content: space-between;
-}
+#content-flight.active .form{
+  height: 15rem;
+  width: 90rem;
+  max-width: 100%;
 
-#content-flight.active .div{
-  width: 49%;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#content-flight.active .options{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#content-flight.active .options select{
+  border: none;
+  background-color: transparent;
+}
+
+#content-flight.active .inputs{
+  
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+#content-flight.active .input {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+#content-flight.active .input input{
+  width: 50%;
+}
+
+#content-flight.active .input img{
+  width: 1.5rem;
+}
+
+#content-flight.active .data{
+width: 50%;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+gap: 1rem;
+padding-left: 1rem ;
+}
+
+#content-flight.active .data input{
+  width: 100%;
 }
 
 #content-flight.active label{
   font-size: 1.5rem;
 }
+
 #content-flight.active input{
-  height: 3rem;
+  height: 4rem;
   border: 1px solid rgba(0, 0, 0, 0.192);
 }
 
 #content-flight.active button{
-   height: 3rem;
-   width: 25%;
+  height: 40px;
+  width: 40px;
 
-   background-color: #606060;
-   border: none;
-   color: #fff;
-   cursor: pointer;
+  background-color: #10c437;
+  border: none;
+  color: #fff;
+  cursor: pointer; 
 }
 
+#content-flight.active button img{
+  width: 2.4rem;
+}
 
 /* ----- HOTEL  ----- */
 
 #content-hotel{
   display: none;
-  background-color: green;
 }
 
 #content-hotel.active{
+  height: 100%;
+  width: 95rem; 
+  max-width: 100%;
+
+  padding: 2rem;
+
   display: flex;
-  background-color: green;
+  flex-direction: column;
+  justify-content: space-around;  
 }
+
+#content-hotel.active h1{
+  font-size: 3rem;
+}
+
+#content-hotel.active .form{
+  height: 15rem;
+  width: 90rem;
+  max-width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#content-hotel.active .options{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+#content-hotel.active .options select{
+  border: none;
+  background-color: transparent;
+}
+
+#content-hotel.active .inputs{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1.5rem;
+}
+
+#content-hotel.active .inputs #origin{
+  width: 50rem;
+}
+
+#content-hotel.active .data{
+display: flex;
+align-items: center;
+gap: 1.5rem;
+}
+
+#content-hotel.active .data input{
+  width: 100%;
+}
+
+#content-hotel.active label{
+  font-size: 1.5rem;
+}
+
+#content-hotel.active input{
+  height: 4rem;
+  border: 1px solid rgba(0, 0, 0, 0.192);
+}
+
+#content-hotel.active button{
+  height: 40px;
+  width: 40px;
+
+  background-color: #10c437;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+#content-hotel.active button img{
+  width: 2.4rem;
+}
+
 
 /* ----- RENTAL ----- */
 
@@ -188,6 +326,44 @@ header img{
 #content-rental.active{
   display: flex;
   background-color: yellow;
+}
+
+/*MEDIA TABLET*/
+
+/*FLIGHT*/
+@media (max-width: 800px) {
+  #content-flight.active .inputs{  
+    flex-direction: column;
+  }
+
+  #content-flight.active .input {
+    width: 100%;    
+  }
+
+  #content-flight.active .data{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+  }
+
+/*HOTEL*/
+  #content-hotel.active .inputs{
+    flex-direction: column;
+  }
+
+  #content-hotel.active .inputs #origin{
+    width: 100%;
+  }
+
+  #content-hotel.active .data{
+    width: 100%;
+    
+    }
+    
+    #content-hotel.active .data input{
+      width: 100%;
+    }
 }
 
 /* --------------- OFFERS ---------------  */
@@ -216,7 +392,7 @@ header img{
 
 /*--------------- EXPLORE ---------------*/
 #explore .cards{
-  height: 41vh;
+  height: 40vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;   

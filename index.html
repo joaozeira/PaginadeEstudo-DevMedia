@@ -38,25 +38,71 @@
 
       <div class="content">
         <div id="content-flight" class="active">
-          <h1>Travel world with us</h1>
+          <h1>Airline tickets</h1>
 
           <div class="form">
-            <div class="div">
-              <label>From</label>
-              <input type="text" placeholder="Departing from" />
+            <div class="options">
+              <select name="Roundtrip">
+              <option value="Roundtrip">Round trip</option>
+              <option value="ida">One way</option>
+              </select>
+  
+              <select name="Econômica">
+                <option value="">Economic</option>
+                <option value="">Premium economy</option>
+                <option value="">Executive</option>
+                <option value="">first class</option>
+                <option value="">Várias</option>
+              </select>
             </div>
-            <div class="div">
-              <label>To</label>
-              <input type="text" placeholder="Arriving at" />
-            </div>
-          </div>
-
-          <button>Search and find dates</button>
+  
+            <div class="inputs">
+              <div class="input">
+                <input type="text" placeholder=" Origin"/>
+                <img src="assets/arrows.svg"/>
+                <input type="text" placeholder=" Destination" />
+              </div>
+              <div class="data">
+                <label>Going</label>
+                <input type="date"/>              
+                <label>Return </label>
+                <input type="date" />
+              </div>
+              <button><img src="assets/lupa branca.png" alt=""></button>
+              
+              
+            </div>    
+          </div>  
         </div>
 
         <div id="content-hotel" class="">
-          <h1>Hotel</h1>
-          <button>Search and find dates</button>
+          <h1>Hotels</h1>
+
+          <div class="form">
+            <div class="options">
+              <select name="Mesmo local">
+              <option value="Mesmo local">Ida e Volta</option>
+              <option value="Outro local">Só ida</option>
+              </select>
+  
+              <select name="Idáde do condutor">
+                <option value="">26 - 65</option>
+                <option value="">Outros</option>                
+              </select>
+            </div>
+  
+            <div class="inputs">
+              
+              <input id="origin" type="text" placeholder=" Origem"/>                
+              
+              <div class="data">                
+                <input type="date" />
+                <input type="date" />
+              </div>              
+              <button><img src="assets/lupa branca.png" alt=""></button>
+
+            </div>    
+          </div> 
         </div>
 
         <div id="content-rental" class="">
@@ -159,7 +205,7 @@
               <img src="assets/snapchat.png" alt="" />
             </div>
 
-            <p>Powered by <strong>João</strong> </p>
+            <p>Powered by <strong>João</strong></p>
           </div>
         </footer>
       </div>
