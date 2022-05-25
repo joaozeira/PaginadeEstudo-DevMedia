@@ -7,71 +7,69 @@
 
 :root {
   /*LAYOUT*/
-   font-size: 62.5%; 
+  font-size: 62.5%;
 }
 
-body{
+body {
   font-family: 'Roboto', sans-serif;
 }
-
 
 main {
   display: flex;
   justify-content: center;
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
 }
 
-.wrapper{
+.wrapper {
   display: flex;
   flex-direction: column;
   width: 80%;
   gap: 5rem;
 }
 
-.title h1{
+.title h1 {
   font-size: 2rem;
 }
 
-.title h1:first-child{
+.title h1:first-child {
   margin-top: 2rem;
 }
-.title p{
+.title p {
   font-size: 1.5rem;
   margin-block: 1rem;
 }
 
-
 /*--------------- HEADER --------------- */
 
-header{
+header {
   height: 5rem;
   width: 100%;
   padding: 2rem;
 
   display: flex;
-  align-items: center; 
+  align-items: center;
   justify-content: space-between;
 }
 
-header a{
+header a {
   color: #f55236;
   text-decoration: none;
 }
-header img{
+header img {
   height: 2.5rem;
   color: #000;
 }
 
 /*--------------- HOME --------------- */
 
-#home{
-  background-image:url(assets/london.jpg);
+#home {
+  background-image: url(assets/london.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
   height: 90vh;
-  width: 100%; 
+  width: 100%;
   padding: 1rem;
 
   display: flex;
@@ -80,18 +78,18 @@ header img{
   flex-direction: column;
 }
 
-#home .navebar{
+#home .navebar {
   height: 3.5rem;
   max-width: 95rem;
   width: 100%;
 
   display: flex;
   align-items: center;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 
-#home .navebar button{
-  height: 3.5rem;  
+#home .navebar button {
+  height: 3.5rem;
   width: 100%;
 
   background-color: black;
@@ -99,22 +97,22 @@ header img{
 
   display: flex;
   align-items: center;
-  justify-content: center; 
-  gap: 0.5rem; 
+  justify-content: center;
+  gap: 0.5rem;
 
   border: none;
   cursor: pointer;
 }
 
-#home .navebar button:hover{
+#home .navebar button:hover {
   background-color: #f55336;
 }
 
-#home .navebar button img{
+#home .navebar button img {
   height: 2rem;
 }
 
-#home .content{
+#home .content {
   height: 28rem;
   max-width: 95rem;
   width: 100%;
@@ -123,27 +121,27 @@ header img{
 
 /* ----- FLIGHT ----- */
 
-#content-flight{
+#content-flight {
   display: none;
 }
 
-#content-flight.active{
-  height: 100%; 
-  width: 95rem; 
+#content-flight.active {
+  height: 100%;
+  width: 95rem;
   max-width: 100%;
 
   padding: 2rem;
 
   display: flex;
   flex-direction: column;
-  justify-content: space-around;  
+  justify-content: space-around;
 }
 
-#content-flight.active h1{
+#content-flight.active h1 {
   font-size: 3rem;
 }
 
-#content-flight.active .form{
+#content-flight.active .form {
   height: 15rem;
   width: 90rem;
   max-width: 100%;
@@ -153,24 +151,22 @@ header img{
   justify-content: space-evenly;
 }
 
-#content-flight.active .options{
+#content-flight.active .options {
   width: 50%;
   display: flex;
   justify-content: space-around;
 }
 
-#content-flight.active .options select{
+#content-flight.active .options select {
   border: none;
   background-color: transparent;
 }
 
-#content-flight.active .inputs{
-  
+#content-flight.active .inputs {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  
 }
 
 #content-flight.active .input {
@@ -181,75 +177,81 @@ header img{
   gap: 1.5rem;
 }
 
-#content-flight.active .input input{
+#content-flight.active .input input {
   width: 50%;
 }
 
-#content-flight.active .input img{
+#content-flight.active .input img {
   width: 1.5rem;
 }
 
-#content-flight.active .data{
-width: 50%;
+#content-flight.active .data {
+  width: 50%;
 
-display: flex;
-align-items: center;
-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-gap: 1rem;
-padding-left: 1rem ;
+  gap: 1rem;
+  padding-left: 1rem;
 }
 
-#content-flight.active .data input{
+#content-flight.active .data input {
   width: 100%;
 }
 
-#content-flight.active label{
+#content-flight.active label {
   font-size: 1.5rem;
 }
 
-#content-flight.active input{
+#content-flight.active input {
   height: 4rem;
   border: 1px solid rgba(0, 0, 0, 0.192);
 }
 
-#content-flight.active button{
+#content-flight.active .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#content-flight.active button {
   height: 40px;
   width: 40px;
 
   background-color: #10c437;
   border: none;
   color: #fff;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
-#content-flight.active button img{
+#content-flight.active button img {
   width: 2.4rem;
 }
 
 /* ----- HOTEL  ----- */
 
-#content-hotel{
+#content-hotel {
   display: none;
 }
 
-#content-hotel.active{
+#content-hotel.active {
   height: 100%;
-  width: 95rem; 
+  width: 95rem;
   max-width: 100%;
 
   padding: 2rem;
 
   display: flex;
   flex-direction: column;
-  justify-content: space-around;  
+  justify-content: space-around;
 }
 
-#content-hotel.active h1{
+#content-hotel.active h1 {
   font-size: 3rem;
 }
 
-#content-hotel.active .form{
+#content-hotel.active .form {
   height: 15rem;
   width: 90rem;
   max-width: 100%;
@@ -259,19 +261,18 @@ padding-left: 1rem ;
   justify-content: space-evenly;
 }
 
-#content-hotel.active .options{
+#content-hotel.active .options {
   width: 50%;
   display: flex;
   justify-content: space-around;
-
 }
 
-#content-hotel.active .options select{
+#content-hotel.active .options select {
   border: none;
   background-color: transparent;
 }
 
-#content-hotel.active .inputs{
+#content-hotel.active .inputs {
   width: 100%;
   display: flex;
   align-items: center;
@@ -279,30 +280,35 @@ padding-left: 1rem ;
   gap: 1.5rem;
 }
 
-#content-hotel.active .inputs #origin{
+#content-hotel.active .inputs #origin {
   width: 50rem;
 }
 
-#content-hotel.active .data{
-display: flex;
-align-items: center;
-gap: 1.5rem;
+#content-hotel.active .data {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
-#content-hotel.active .data input{
+#content-hotel.active .data input {
   width: 100%;
 }
 
-#content-hotel.active label{
+#content-hotel.active label {
   font-size: 1.5rem;
 }
 
-#content-hotel.active input{
+#content-hotel.active input {
   height: 4rem;
   border: 1px solid rgba(0, 0, 0, 0.192);
 }
+#content-hotel.active .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-#content-hotel.active button{
+#content-hotel.active button {
   height: 40px;
   width: 40px;
 
@@ -312,161 +318,123 @@ gap: 1.5rem;
   cursor: pointer;
 }
 
-#content-hotel.active button img{
+#content-hotel.active button img {
   width: 2.4rem;
 }
 
-
 /* ----- RENTAL ----- */
 
-#content-rental{
+#content-rental {
   display: none;
   background-color: yellow;
 }
-#content-rental.active{
+#content-rental.active {
   display: flex;
   background-color: yellow;
 }
 
-/*MEDIA TABLET*/
-
-/*FLIGHT*/
-@media (max-width: 800px) {
-  #content-flight.active .inputs{  
-    flex-direction: column;
-  }
-
-  #content-flight.active .input {
-    width: 100%;    
-  }
-
-  #content-flight.active .data{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 0;
-  }
-
-/*HOTEL*/
-  #content-hotel.active .inputs{
-    flex-direction: column;
-  }
-
-  #content-hotel.active .inputs #origin{
-    width: 100%;
-  }
-
-  #content-hotel.active .data{
-    width: 100%;
-    
-    }
-    
-    #content-hotel.active .data input{
-      width: 100%;
-    }
-}
-
 /* --------------- OFFERS ---------------  */
-#offers .container{
+#offers .container {
+  height: max-content;
   display: grid;
+  align-items: center;
   grid-template-columns: 2fr 1fr 1fr;
-  gap: 2rem;  
+  gap: 2rem;
 }
 
-#offers .container img:first-child{  
+#offers .container img:first-child {
   grid-row-start: 1;
   grid-row-end: 3;
   height: 42rem;
   max-height: 100%;
   width: 1000rem;
-  max-width: 100%;  
+  max-width: 100%;
 }
 
-#offers .container img{
+#offers .container img {
   height: 20rem;
   max-height: 100%;
   width: 29rem;
   max-width: 100%;
 }
 
-
 /*--------------- EXPLORE ---------------*/
-#explore .cards{
-  height: 40vh;
+#explore .cards {
+  height: 60vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;   
+  gap: 2rem;
 }
 
-#explore .card{
-  height: 15rem;
+#explore .card {
+  height: 100%;
   max-height: 100%;
   width: 100%;
-  margin-top: 15px;
-  
-  border:none;
+
+  border: none;
 }
 
-#explore .card img{
-  height: 18rem; 
-  max-height: 100%; 
-  width: 100%;  
+#explore .card img {
+  height: 60%;
+  max-height: 100%;
+  width: 100%;
 }
 
-#explore .info{
+#explore .info {
   gap: 1rem;
   background-color: #fff;
-  height: 100%;
-  width: 100%;  
-  padding: 1.5rem;  
+  height: 40%;
+  width: 100%;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: start;
 }
 
-#explore .info h1{
+#explore .info h1 {
   font-size: 3rem;
 }
-#explore .info h2{
+#explore .info h2 {
   font-size: 1rem;
 }
 
-#explore .info p{
+#explore .info p {
   font-size: 1.5rem;
 }
 
-#explore .info button{
+#explore .info button {
   font-size: 2rem;
-  padding: .5rem;
-  border: none;  
+  padding: 0.5rem;
+  border: none;
   background-color: transparent;
   cursor: pointer;
 }
 
 /*--------------- PROMO --------------- */
 
-#promo .container{
+#promo .container {
   background-color: #616161;
   color: #fff;
 
   height: 20rem;
-  padding: .5rem 1.5rem ;
-  
+  padding: 0.5rem 1.5rem;
+
   display: flex;
   justify-content: space-around;
   flex-direction: column;
 }
 
-#promo input{
+#promo input {
   height: 3.5rem;
   width: 100%;
 }
 
-#promo h1{
+#promo h1 {
   font-size: 3rem;
 }
 
-#promo button{
+#promo button {
   margin-top: 10px;
   height: 40px;
   width: 80px;
@@ -477,29 +445,29 @@ gap: 1.5rem;
 }
 
 /*--------------- CONTACT ---------------*/
-#contact{
+#contact {
   height: 40vh;
   padding: 1.5rem;
-  
+
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   gap: 1rem;
 }
 
-#contact h1{
+#contact h1 {
   font-size: 3rem;
 }
 
-#contact h2{
+#contact h2 {
   font-size: 1rem;
 }
 
-#contact ul{
+#contact ul {
   list-style-type: none;
 }
 
-#contact .form input{
+#contact .form input {
   display: flex;
   width: 100%;
   height: 3.5rem;
@@ -507,11 +475,11 @@ gap: 1.5rem;
   border: 1px solid rgba(0, 0, 0, 0.192);
 }
 
-#contact .form button{
+#contact .form button {
   margin-top: 1rem;
   height: 4rem;
   width: 15rem;
-  
+
   background-color: #000;
   color: #fff;
 
@@ -520,7 +488,7 @@ gap: 1.5rem;
 }
 /*--------------- FOOTER ---------------*/
 
-#footer{
+#footer {
   height: 200px;
 
   display: flex;
@@ -528,8 +496,7 @@ gap: 1.5rem;
   justify-content: center;
 }
 
-#footer .container{
-  
+#footer .container {
   height: 150px;
   width: 150px;
   display: flex;
@@ -538,13 +505,100 @@ gap: 1.5rem;
   flex-direction: column;
 }
 
-#footer .container p{
+#footer .container p {
   font-size: 15px;
 }
 
-#footer .icons img{
+#footer .icons img {
   height: 30px;
   width: 30px;
-  
 }
 
+/*MEDIA TABLET*/
+
+@media (max-width: 800px) {
+  #home {
+    height: 60vh;
+  }
+
+  /*FLIGHT*/
+  #content-flight.active .inputs {
+    flex-direction: column;
+  }
+
+  #content-flight.active .input {
+    width: 100%;
+  }
+
+  #content-flight.active .data {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+  }
+
+  /*HOTEL*/
+  #content-hotel.active .inputs {
+    flex-direction: column;
+  }
+
+  #content-hotel.active .inputs #origin {
+    width: 100%;
+  }
+
+  #content-hotel.active .data {
+    width: 100%;
+  }
+
+  #content-hotel.active .data input {
+    width: 100%;
+  }
+
+  /*RENTAL*/
+
+  /* ------ OFFERS ------ */
+
+  #offers .container {
+    height: max-content;
+    grid-template-columns: 1fr;
+  }
+
+  #offers .container img:first-child {
+    height: 40rem;
+    max-height: 100%;
+    width: 1000rem;
+    max-width: 100%;
+  }
+
+  #offers .container img {
+    height: 40rem;
+    max-height: 100%;
+    width: 1000rem;
+  }
+
+  /*--------------- EXPLORE ---------------*/
+  #explore .cards {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px){
+  #home{
+    background-image: none;
+    height: max-content;
+    padding: 0%;
+  }
+
+  /* ------ OFFERS ------ */
+
+  #offers .container img:first-child {
+    height: 30rem;
+    max-height: 100%;    
+  }
+
+  #offers .container img {
+    height: 30rem;    
+  }
+}
